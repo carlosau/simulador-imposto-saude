@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Impostos - Saúde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Impostos para Serviços de Saúde</h1>
+    <form id="simulador-form">
+      <label for="faturamento">Faturamento Mensal (R$):</label>
+      <input type="number" id="faturamento" required>
+
+      <label for="despesas">Despesas Mensais (R$):</label>
+      <input type="number" id="despesas" required>
+
+      <label for="regime">Escolha o Regime Fiscal:</label>
+      <select id="regime" required>
+        <option value="simples-anexo-iii">Simples Nacional - Anexo III</option>
+        <option value="simples-anexo-v">Simples Nacional - Anexo V</option>
+        <option value="lucro-presumido">Lucro Presumido</option>
+        <option value="lucro-presumido-hospitalar">Lucro Presumido Hospitalar</option>
+      </select>
+
+      <button type="submit">Calcular Impostos</button>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <h2>Resultado do Cálculo</h2>
+      <p id="impostos">Selecione os dados e calcule os impostos.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
